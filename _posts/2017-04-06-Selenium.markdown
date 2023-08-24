@@ -1,0 +1,118 @@
+---
+layout: post
+title: Introduction to Selenium Testing using Python
+date: 2023-03-08 13:32:20 +0300
+description: Advantages of using Selenium in Testing and Automation.
+img: https://portfolio20072023.s3.ap-south-1.amazonaws.com/selpython.png
+---
+
+<h3>Introduction</h3>
+Selenium is an open source umbrella project for a range of tools and libraries aimed at supporting browser automation. It provides a playback tool for authoring functional tests across most modern web browsers, without the need to learn a test scripting language.
+
+Selenium is composed of several components with each taking on a specific role in aiding the development of web application test automation.
+eg: Selenium IDE, Selenium Client Api, Selenium Remote Control and Selenium Webdriver. Out of which <b>Selenium Webdriver</b> is the most commonly used for browser automation and testing.
+
+The main advantage of using Selenium Webdriver is that, users can write scripts which reduce manual work and increase the efficiency of the product. Users can also use them for writing automation scipts for testing software products which requires certain process to be done repeatedly. Also used in updating documents like excel on a large scale.
+
+There are multiple reasons as to why Selenium is way more popular and powerful when compared to other web-automation tools in the market. Here are the reasons why:
+
+1.&nbsp;It is an open-source, free-to-use, portable tool that is used to perform web-testing in a seamless manner.
+<br/>
+2.&nbsp;It is a combination of several Domain Specific Language (DSL) and other tools which allow you to perform various types of testing.
+<br/>
+3.&nbsp;It is quite easy to understand, intuitive, and has a low learning curve. The commands are categorized as multiple classes, making them easier to understand.
+<br/>
+4.&nbsp;It takes off a load of the burden from testers, since the amount of time that is required to perform testing, especially on repeated test cases reduces drastically.
+<br/>
+5.&nbsp;There is a significant reduction in the costs incurred to the business clients, which is a win-win situation.
+<br/> 
+
+<h3>How to Install Selenium for Python?</h3>
+
+It's a simple step, by running the following command in the terminal
+<pre><code><h5>pip install selenium</h5></code></pre>
+
+Before installing Selenium in your system, ensure you have python installed and updated to latest version. If python is not installed, you can refer the following link to install python
+<a style='Color:blue' href="https://www.python.org/downloads/">Download Python</a>. Install the latest python version and then run the above step.
+
+After installing Selenium, its important to install the chromeWebDriver which is used to execute cross-browser tests and automating web-based appication testing.
+
+To install this , first check the version of Chrome in your PC by going into,
+<pre><code><h5>Open Chrome => Settings => About Chrome</h5></code></pre>
+You can find the version of Chrome there.
+
+After that, go to <a style='Color:blue' href='https://chromedriver.chromium.org/downloads'>ChromeDriver Download</a>
+
+Check the version of WebDriver that matches your Chrome version and install it.
+
+After Installing, make sure the webdriver path is add to the Environmental Variables of your PC.
+To check this, do the following
+<pre><code><h5>Start => Settings => System => About => Advanced Settings => Environmental Variables => Under user_variables => Select PATH and click Edit</h5></code></pre>
+
+This will list all the variables. Check is WebDriver path is present. If not add it to the path.
+
+<h4>Note:</h4>
+If the Webdriver path is not added to the environmental variables then Webdriver will not work.
+
+To check if the selenium webdriver is working, run the following commands in terminal
+<pre><code><h5>Terminal => type Python => type from selenium import webdriver => Enter</h5></code></pre>
+
+If this returns no error then the driver is added to the path.
+
+If it returns <b>"Chrome executable needs to be in path"</b>, then the webdriver is not added to the path yet.
+
+<h3>How to run your first test?</h3>
+<pre><code>from selenium import webdriver<br/>driver = webdriver.Chrome.get("https://www.google.com")<br/>driver.close()</code></pre>
+
+Normally selenium is used to locate elements in the source code and extract data. Commonly used functions are:
+<pre><code>driver.find_element(By.ID, "id")<br/>driver.find_element(By.NAME, "name")<br/>driver.find_element(By.XPATH, "xpath")<br/>driver.find_element(By.CLASS_NAME, "class name")<br/>driver.find_element(By.CSS_SELECTOR, "css selector")<br/>driver.find_element(By.TAG_NAME, "tag name")</code></pre>
+
+For finding multiple elements, the term <b>find_element</b> is replaced with <b>find_elements</b>.
+
+Since Selenium is mostly used in Automation Testing, there are different types of selenium testing.
+
+<h3>Regression testing</h3>
+
+- This test reruns already finished tests to check that codebase modifications have not generated new problems or regressions. 
+- As opposed to executing these tests manually, Selenium can automate the execution of a suite of regression tests.
+
+<h3>Functional testing</h3>
+
+- This test ensures that an application functions properly and meets the requirements set out for it. 
+- Selenium can automate the execution of functional tests by mimicking user activities such as button clicks and form filling and ensuring that the application reacts as intended.
+
+<h3>Integration testing</h3>
+
+- Integration testing ensures that different components of software programs work when linked together. 
+- Selenium can automate the execution of integration tests by simulating application usage involving several software components. 
+
+<h3>Performance testing</h3>
+
+- Performance testing ensures that the software can manage the predicted load and amount of traffic. 
+- Selenium can perform performance testing by emulating many user activities and evaluating the application’s response time.
+
+<h3>Cross-browser testing</h3>
+
+- The cross-browser test checks if an online application works properly on various web browsers. 
+- Selenium can organize the execution of tests on many browsers, guaranteeing that the application works in various browser environments.
+
+<h3>Drawbacks of Selenium</h3>
+
+- Dealing with dynamic web pages, where the page layout or content may vary based on user interactions or other circumstances, is a common challenge for Selenium.
+
+- Such testing can be difficult and time-consuming and may necessitate adopting additional tools or procedures to achieve complete coverage. 
+
+- Another concern with Selenium is the upkeep of test scripts. As the application under test evolves, the test scripts may need to be modified to keep up.
+
+- It can be a substantial load for testers, especially if the test suite is extensive and the application is constantly updated.
+
+<h3>Conclusion</h3>
+Overall, Selenium is a useful tool for testing online applications, and Selenium with Python makes it particularly appealing to testers who prefer to work in a familiar language. 
+Despite its shortcomings, Selenium is widely used in the business and has a large community of users and developers continually striving to improve and extend the software.
+
+To know more about Selenium and its features, follow the link <a style='Color:blue' href='https://selenium-python.readthedocs.io/'>Selenium Documentation</a>.
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
