@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "postcss": "^8.3.6"
+  },
+  "scripts": {
+    "vercel-build": "gulp jekyll-build && gulp sass && gulp img"
   }
 }
