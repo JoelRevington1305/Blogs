@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "public" } }
+    ],
+    "env": {
+      "PYTHON_VERSION": "3.8.0"
+    }
+  }
+  
