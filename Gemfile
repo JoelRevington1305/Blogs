@@ -6,5 +6,5 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
   gem "jemoji"
-  gem "jekyll-sass-converter", "~> 2.2"
+  gem "jekyll-sass-converter", "~> 3.0.0"
 end
