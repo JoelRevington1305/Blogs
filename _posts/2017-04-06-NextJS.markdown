@@ -1,0 +1,99 @@
+---
+layout: post
+title: What improvises Next JS over React Js for web-development?
+date: 2023-11-20 13:32:20 +0300
+description: developers-point-on-NextJS-over-ReactJS
+img: https://ygileyiojgtkehmwllmy.supabase.co/storage/v1/object/public/personal//next.avif
+---
+
+<h3>Introduction</h3>
+Have you ever been to web development like building User Interfaces (UI) and user Experience (UX), writing APIs, and fetching data from the DB?
+
+Both React and Next offer users a vast variety in the field of development.
+
+But by what standards do they differ from each other and why do recruiters prefer Next JS developers in recent times?
+
+Let's find out...
+
+For readers who are new to the terms React js and Next js, a small description of them.
+
+<h3>React JS- a quick intro</h3>
+React is a UI library created by Meta to build reactive apps based on event triggers. In a traditional approach, a website reloads when data needs to be changed, which means when something is clicked, the whole page reloads to show another state which in most cases can be slow to reload. React components can be stateless or stateful and only re-render within the scope of the applied state.
+
+React is built to be declarative. That means you get to decide the workflow. You get to control how your app works, making React a powerful tool.
+
+<h3>Next JS - a quick intro</h3>
+Next JS is a lightning-fast React framework that gives you building blocks to create web applications, trusted and used by sites like Netflix, etc. By framework, we mean Next.js handles the tooling and configuration needed for React and provides additional structure, features, and optimizations for your application.
+
+Though both React and Next.js help create effective web user interfaces, they have some key differences: Next.js is more feature-rich and opinionated than React. It is especially well-suited for websites focused on search engine optimization (SEO) or pre-rendering.
+
+<h3>Features of Next.js</h3>
+The following features make Nextjs a cutting-edge tool for developers:
+
+- File system routing
+- Server Side rendering
+- Static site generator
+- Image optimization
+- Automatic code splitting
+- API route
+
+<h3>So, what makes Next Js more popular?</h3>
+Though React reduces the complexity of code implementation, Next JS provides many more advantages in web development.
+
+- <h4>Development speed:</h4>
+    Next.js provides out-of-the-box features that ease the development process for making an advanced React app. With the introduction of its compiler in Next.js 12, the framework also increased build speeds. Compared to React, Next.js reduces the amount of time an engineer needs to wait for code to refresh, minimizing developer frustration and slowdowns.
+
+- <h4>Routing:</h4>
+    Next.js provides a structured, predefined file system for routing. Its system offers reduced flexibility compared to React’s various library options (e.g., React Router), but simplifies page setup and routing.
+
+- <h4>Data fetching and load times:</h4>
+    Next.js can traverse the React tree and query for data in the server, allowing for pre-loaded page data. This often results in lower application load times for pages served by Next.js compared to pages written in vanilla React.
+
+- <h4>Image Optimization:</h4>
+    The HTML <img> tag has been evolved by the Next.js team with built-in performance to help with picture optimization. To use this feature, the next/image component is imported. With this feature, images automatically resize to the screen size seamlessly, even images from a remote location. This new feature provides developers with an easy way to optimize their images for performance without having to manually resize or compress them.
+
+- <h4>Automatic Code Splitting</h4>
+    As your Next.js applications grow bigger, the size of third-party library, CSS, and JavaScript files or bundles increases. Instead of downloading a large file on page load, these code/scripts can be split into smaller units, and for every feature required, these scripts are downloaded immediately, thereby increasing performance.
+
+- <h4>Rendering and SEO:</h4>
+    Next.js offers pre-rendering, whereas React uses client-side rendering. Pre-rendered pages enable effective SEO strategies that are challenging to achieve in a plain React app.
+
+- <h4>API Route:</h4>
+    Next.js provides a built-in way to create your own APIs, called API routes. With API routes, you can create your own endpoints and handle incoming requests however you want. You can use API routes to create a custom backend for your Next.js application or to expose data from your database to the front end. Either way, API routes give you a lot of flexibility in how you build your Next.js application.
+
+Although React serves a variety of projects like building dashboards, internal organisation tools, back-end integrations, etc..., Next JS offers an ideal toolkit that enhances React JS applications that benefit from the power of pre-rendering, including e-commerce websites, education platforms, etc.
+
+<h3>Rendering in Next JS</h3>
+Next.js provides three rendering methods—client-side rendering (CSR), server-side rendering (SSR), and static site generation (SSG). It also provides an additional important feature called Incremental Static Regeneration(ISR). ISR combines server-side rendering with a semi-static caching mechanism that relieves server load and provides speeds similar to those achieved by a static site.
+
+A great advantage of using Next.js is that it adds powerful support for pre-rendering React apps. Both SSR and SSG fall under this category.
+
+<h3>Client-side Rendering</h3>
+Client-side Rendering occurs mostly in vanilla applications built using React. In this method the page's HTML is generated on the client side (i.e.) it occurs on the user's browser. Once the rendering is completed the UI is loaded.
+
+CSR is possible for Next.js components using React’s useEffect and useSWR.
+
+<h3>Server-side Rendering</h3>
+In this case, Next JS generates the page's HTML on the server before the generated HTML is sent to the client so that the UI appears even before the hydration of the website.
+
+<h3>Static Site Generation</h3>
+Next.js also offers static site generation, in which all static HTML pages are rendered from JavaScript at build time. Generating a static site from a React code base requires more upfront build time compared to a React single-page application. However, the payoff here is having static content that can be served and cached at the maximum speed allowed by the site content without the computational overhead of SSR.
+
+<h3>Search Engine Optimization(SEO)</h3>
+Next.js’s speed and ability to pre-render all pages of a website allows search engines to quickly and easily crawl and index the website, improving SEO. SEO is critical for many businesses and websites because websites with better SEO appear higher in search results.
+
+React websites with large amounts of content—and the resultant Javascript code used for rendering—face SEO challenges when dealing with Google crawling and indexing.
+
+The main advantage of Next.js is that it easily performs Server-side Rendering and not only enhances SEO optimization but also improves the website's perceived and actual load time thereby increasing the efficiency of the optical user experience.
+
+Also, an added advantage of Next.js is that it offers the developers a specific folder structure which improves in handling the routing configurations.
+
+<h3>Conclusion</h3>
+There are many factors to consider before choosing a framework for your next website. Though Next.js is more opinionated and less flexible than React, the framework offers great out-of-the-box functionality for advanced projects targeting SEO or pre-rendering capabilities. With the foundations of Next.js in your toolkit, you can supercharge your site and get an edge over vanilla React applications.
+
+> For your kind reminder, my next few blogs will be based on Next JS, its features and its implementation.
+
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
